@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
 * {
   box-sizing: border-box;
   font-family: "Familjen Grotesk";
@@ -64,7 +66,7 @@ button {
 }
 
 .sidebar button:hover {
-  background: #3c3a48;
+  background: #3c3a4849;
 }
 
 .sidebar button span:nth-child(2) {
@@ -81,12 +83,13 @@ button {
 }
 
 .active{
-  color: #FDD015 !important;
-  /* color: #00AB44 !important; */
+  /* color: #FDD015 !important; */
+  color: #00AB44 !important;
 }
 
 main{
-  margin-left: 280px;
+  margin-left: 260px;
+  /* padding-left: 10px; */
 }
 
 /* Login */
@@ -179,4 +182,33 @@ main{
 
 .toggle.showing {
   background-image: url("/images/hide.svg");
+}
+
+.text-color{
+  color: #00AB44;
+}
+
+.border-bottom{
+  border-bottom: 0.5px solid #bababa56;
+}
+
+.pattern-bg-1{
+  background-image: url(/images/pattern-1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pattern-bg-2{
+  background-image: url(/images/pattern-2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pattern-bg-3{
+  background-image: url(/images/pattern-3.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
