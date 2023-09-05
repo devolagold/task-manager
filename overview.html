@@ -48,30 +48,23 @@
 
     <main>
         <!-- Top Navogation -->
-        <div class="flex w-full bg-white justify-between px-6 py-3 border-bottom">
+        <div class="flex w-full bg-white text-[#060606] justify-between px-6 py-3 border-bottom">
             <div class="flex flex-col">
                 <h2 class="text-2xl font-bold">Overview</h2>
                 <p class="text-gray-600 text-sm">Manage all your task in one place</p>
             </div>
 
             <button class="flex items-center space-x-3 bg-black text-white px-8 rounded-lg">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_23_1936)">
-                    <path d="M8.25 8.25V3.75H9.75V8.25H14.25V9.75H9.75V14.25H8.25V9.75H3.75V8.25H8.25Z" fill="#FFF"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_23_1936">
-                    <rect width="18" height="18" fill="#00AB44"/>
-                    </clipPath>
-                    </defs>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 1H17V3H21V12H19V5H17V7H7V5H5V21H12V23H3V3H7V1ZM9 5H15V3H9V5ZM20 14V18H24V20H20V24H18V20H14V18H18V14H20Z" fill="white"/>
                 </svg>
                 <p>New Task</p>                 
             </button>
         </div>
 
-        <!-- Cards -->
+        <!-- Tasks Cards -->
         <div class="flex space-x-4 mx-6 mt-6">
-            <div class="card pattern-bg-1 bg-[#060606] text-white text-left p-5 space-y-12 rounded-lg">
+            <div class="card pattern-bg-1 bg-[#060606] text-white text-left p-5 space-y-16 rounded-lg">
                 <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="34" height="34" rx="17" fill="#4E36F5"/>
                     <g filter="url(#filter0_i_43_4181)">
@@ -89,14 +82,14 @@
                     <feBlend mode="normal" in2="shape" result="effect1_innerShadow_43_4181"/>
                     </filter>
                     </defs>
-                </svg>                         
+                </svg>                                           
                 <div class="flex flex-col text- space-y-3">
-                    <h1 class="text-5xl">8</h1>
-                    <h1 class="text-2xl font-">To Do Tasks</h1>
+                    <h1 class="text-5xl font-semibold tracking-tight">8</h1>
+                    <h1 class="text-2xl">Active Tasks</h1>
                 </div>
             </div>
 
-            <div class="card pattern-bg-2 bg-[#060606] text-white text-left p-5 space-y-12 rounded-lg">
+            <div class="card pattern-bg-2 bg-[#060606] text-white text-left p-5 space-y-16 rounded-lg">
                 <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="34" height="34" rx="17" fill="#FFB11B"/>
                     <g filter="url(#filter0_i_43_4181)">
@@ -116,12 +109,12 @@
                     </defs>
                 </svg>                                                               
                 <div class="flex flex-col text- space-y-3">
-                    <h1 class="text-5xl">12</h1>
-                    <h1 class="text-2xl font-">Pending Tasks</h1>
+                    <h1 class="text-5xl font-semibold tracking-tight">12</h1>
+                    <h1 class="text-2xl">Pending Tasks</h1>
                 </div>
             </div>
 
-            <div class="card pattern-bg-3 bg-[#060606] text-white text-left p-5 space-y-12 rounded-lg">
+            <div class="card pattern-bg-3 bg-[#060606] text-white text-left p-5 space-y-16 rounded-lg">
                 <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="34" height="34" rx="17" fill="#00AB44"/>
                     <g filter="url(#filter0_i_43_4181)">
@@ -142,11 +135,61 @@
                 </svg>                    
                                           
                 <div class="flex flex-col text- space-y-3">
-                    <h1 class="text-5xl">3</h1>
-                    <h1 class="text-2xl font-">Completed Tasks</h1>
+                    <h1 class="text-5xl font-semibold tracking-tight">3</h1>
+                    <h1 class="text-2xl">Completed Tasks</h1>
                 </div>
             </div>
 
+        </div>
+
+        <!-- Ongoing Tasks -->
+        <div class="flex flex-col space-y-4 mx-6 mt-8 text-[#060606]">
+            <h2 class="text-2xl font-bold">Ongoing Tasks</h2>
+
+            <!-- ====== Table Section-->
+            <section class="bg-white">
+                <div class="-mx-4 flex flex-wrap">
+                    <div class="w-full px-4">
+                    <div class="max-w-full overflow-x-auto">
+                        <table class="w-full table-auto">
+                            <thead class="text-white">
+                                <tr class="bg-[#060606] text-center">
+                                    <th class="w-1/6 min-w-[220px] text-left py-4 px-3 text-lg font-semibold">
+                                        Task Name
+                                    </th>
+                                    <th class="w-1/6 min-w-[160px] text-left py-4 px-3 text-lg font-semibold">
+                                        Deadline
+                                    </th>
+                                    <th class="w-1/6 min-w-[160px] text-left py-4 px-3 text-lg font-semibold">
+                                        Progress
+                                    </th>
+                                    <th class="w-1/6 min-w-[160px] text-left py-4 px-3 text-lg font-semibold">
+                                        Priority
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td class="text-dark border-b border-l border-[#E8E8E8] bg-[#F3F6FF] py-5 px-3 text-left text-base font-medium">
+                                    Design a Landing Page
+                                    </td>
+                                    <td class="text-dark border-b border-[#E8E8E8] bg-white py-5 px-3 text-left text-base font-medium">
+                                        2 Days
+                                    </td>
+                                    <td class="text-dark border-b border-l border-[#E8E8E8] bg-[#F3F6FF] py-5 px-3 text-left text-base font-medium">
+                                        50%
+                                    </td>
+                                    <td class="text-dark border-b border-[#E8E8E8] bg-white py-5 px-3 text-left text-base font-medium">
+                                        Medium
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+            </section> 
         </div>
     </main>
   </body>
