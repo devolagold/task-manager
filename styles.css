@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  font-family: "Familjen Grotesk";
+}
+
+body {
+  margin: 0;
+  background: #f7f7f71f;
+  color: #292929;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100%;
+  background: #060606;
+  color: #FFFFFF;
+  transition: width 0.4s;
+}
+
+.sidebar header {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  padding: 0 1.25rem 0 0;
+  border-bottom: 1px solid rgb(255 255 255 / 12%);
+}
+
+.sidebar header button {
+  width: 64px;
+}
+
+.sidebar header img {
+  height: 24px;
+  width: 24px;
+  margin-left: 24px;
+  margin-right: 14px;
+  object-fit: contain;
+}
+
+.sidebar button {
+  position: relative;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  padding: 0 16px 0 25px;
+  color: #f7f7f7;
+  transition: 0.25s;
+}
+
+.sidebar button:hover {
+  background: #3c3a48;
+}
+
+.sidebar button span:nth-child(2) {
+  flex: 1 1 auto;
+}
+
+.sidebar button.active span:nth-child(3) {
+  rotate: -180deg;
+}
+
+.material-symbols-outlined {
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.active{
+  /* color: #FDD015 !important; */
+  color: #00AB44 !important;
+}
+
+main{
+  margin-left: 280px;
+}
+
+/* Login */
+.login-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.control {
+  border: 0;
+  outline: none;
+  width: 100%;
+  height: 56px;
+  padding: 0 56px 0 16px;
+  border-radius: 6px;
+  background: #f4f5f7;
+  color: #5a4f79;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+.control:focus {
+  border-color: rgb(0 0 0 / 30%);
+}
+
+.card {
+  width: 500px;
+  padding: 32px 18px;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0px 1px 3px 0px rgba(11, 19, 36, 0.05);
+}
+
+.card > img {
+  width: 240px;
+  margin-bottom: 20px;
+}
+
+.card > h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 0 30px;
+}
+
+.form {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.form input.control::placeholder {
+  color: #aaa7bc;
+}
+
+.form > a button.control {
+  cursor: pointer;
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+  background: #060606;
+  color: #f9f9f9;
+  border: 0;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: all 0.375s;
+}
+
+.password {
+  position: relative;
+}
+
+.toggle {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  translate: 0 -50%;
+  width: 30px;
+  height: 30px;
+  background-image: url("show.svg");
+  background-size: 85%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.toggle.showing {
+  background-image: url("hide.svg");
+}
