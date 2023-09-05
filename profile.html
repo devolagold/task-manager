@@ -24,14 +24,14 @@
         </a>
 
         <a href="tasks-active.html">
-            <button class="active">
+            <button>
                 <span class="material-symbols-outlined"> work </span>
                 <span>Tasks</span>
             </button>
         </a>
 
         <a href="#">
-            <button>
+            <button class="active">
                 <span class="material-symbols-outlined"> account_circle </span>
                 <span>Profile</span>
             </button>
@@ -46,7 +46,54 @@
     </aside>
 
     <main>
+        <!-- Top Navogation -->
+        <div class="flex w-full bg-white text-[#060606] justify-between px-6 py-3 border-bottom">
+            <div class="flex flex-col">
+                <h2 class="text-2xl font-bold">Profile</h2>
+                <p class="text-gray-600 text-sm">Personalize your account here</p>
+            </div>
 
+            <a href="create-task.html" class="flex items-center space-x-3 bg-black text-white px-8 rounded-lg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 1H17V3H21V12H19V5H17V7H7V5H5V21H12V23H3V3H7V1ZM9 5H15V3H9V5ZM20 14V18H24V20H20V24H18V20H14V18H18V14H20Z" fill="white"/>
+                </svg>
+                <p>New Task</p>                 
+            </a>
+        </div>
+
+        <div class="flex flex-col space-y-2 mx-6 mt-6">
+            <h1 class="text-2xl font-medium">Update your Details</h1>  
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <p class="text-base font-light text-gray-600 mt-4">Name</p>
+                    <input class="control mt-2 text-base" type="name" placeholder="User Name"/>       
+                </div>
+    
+                <div>
+                    <p class="text-base font-light text-gray-600 mt-4">Email</p>
+                    <input class="control mt-2 text-base" type="email" placeholder="example@gmail.com" disabled/> 
+                </div>
+
+                <div>
+                    <p class="text-base font-light text-gray-600 mt-4">Change Password</p>
+                    <input class="control mt-2 text-base" type="password" placeholder="User Name"/>       
+                </div>
+
+                <div>
+                    <p class="text-base font-light text-gray-600 mt-4">Confirm Password</p>
+                    <input class="control mt-2 text-base" type="password" placeholder="User Name"/>       
+                </div>
+            </div>  
+            
+            <div class="flex space-x-4">
+                <a href="#" class="my-6 border-solid border border-stone-900 inline-flex items-center justify-center rounded-[5px] py-3 px-6 text-center text-base font-medium text-[#060606] hover:bg-opacity-90">
+                    Cancel
+                 </a>
+                 <a href="#" class="my-6 bg-[#060606] inline-flex items-center justify-center rounded-[5px] py-3 px-6 text-center text-base font-medium text-white hover:bg-opacity-95">
+                    Update
+                 </a>
+            </div>
+        </div>
     </main>
 </body>
 </html>

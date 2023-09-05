@@ -83,7 +83,6 @@ button {
 }
 
 .active{
-  /* color: #FDD015 !important; */
   color: #00AB44 !important;
 }
 
@@ -142,7 +141,6 @@ main{
 .card > h2 {
   font-size: 36px;
   font-weight: 600;
-  /* margin: 0 0 30px; */
 }
 
 .form {

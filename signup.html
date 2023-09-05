@@ -4,23 +4,24 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Task Manager | Login</title>
+        <title>Task Manager | Sign Up</title>
         <link rel="stylesheet" href="css/styles.css" />
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body class="login-body">
         <div class="card rounded-lg">
             <!-- <img src="images/task-illustration.svg" /> -->
-            <h2 class="text-2xl mb-4">Log In</h2>
-            <p class="mb-4">Enter your details to login to your dashboard</p>
+            <h2 class="text-2xl mb-4">Sign Up</h2>
+            <p class="mb-4">Provide the correct details below to create an account.</p>
             <form class="form">
-                <input class="control" type="email" placeholder="Email"/>
+                <input class="control" type="name" placeholder="Enter your name"/>
+                <input class="control" type="email" placeholder="Enter your Email"/>
                 <div class="password">
-                    <input spellcheck="false" class="control" id="password" type="password" placeholder="Password"/>
+                    <input spellcheck="false" class="control" id="password" type="password" placeholder="Create Password"/>
                     <button class="toggle" type="button" onclick="togglePassword(this)"></button>
                 </div>
-                <a href="overview.html">
-                    <button class="control" type="button">LOG IN</button>
+                <a href="login.html">
+                    <button class="control" type="button">SIGN UP</button>
                 </a>
             </form>
         </div>
