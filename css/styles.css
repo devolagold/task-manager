@@ -192,25 +192,26 @@ main{
   border-bottom: 0.5px solid #bababa56;
 }
 
-.pattern-bg-1{
-  background-image: url(/images/pattern-1.png);
+.pattern-bg-1, .pattern-bg-2, .pattern-bg-3 .pattern-bg-4{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.pattern-bg-1{
+  background-image: url(/images/pattern-1.png);
 }
 
 .pattern-bg-2{
   background-image: url(/images/pattern-2.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .pattern-bg-3{
   background-image: url(/images/pattern-3.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+
+.pattern-bg-4{
+  background-image: url(/images/pattern-4.png);
 }
 
 .badge{
