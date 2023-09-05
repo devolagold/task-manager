@@ -81,8 +81,8 @@ button {
 }
 
 .active{
-  /* color: #FDD015 !important; */
-  color: #00AB44 !important;
+  color: #FDD015 !important;
+  /* color: #00AB44 !important; */
 }
 
 main{
@@ -171,12 +171,12 @@ main{
   translate: 0 -50%;
   width: 30px;
   height: 30px;
-  background-image: url("show.svg");
+  background-image: url("/images/show.svg");
   background-size: 85%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .toggle.showing {
-  background-image: url("hide.svg");
+  background-image: url("/images/hide.svg");
 }
