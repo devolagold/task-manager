@@ -234,3 +234,34 @@ main{
   padding: 4px;
   border-radius: 100px;
 }
+
+@media (max-width: 786px) {
+    .sidebar{
+        width: 11%;
+    }
+
+    .sidebar header img{
+        margin-left: 18px;
+    }
+
+    .sidebar a button{
+        padding-left: 18px;
+    }
+
+    .sidebar header{
+        height: 61px;
+    }
+
+    .sidebar header span{
+        display: none;
+    }
+
+    .sidebar a button span{
+        display: none;
+    }
+
+    main{
+        margin-left: 12%;
+        width: 89%;
+    }
+}
